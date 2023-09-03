@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  padding: 128px 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 411px;
+  text-align: center;
+  margin-bottom: 28px;
+
+  color: #111;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: #fd9222;
+}
+
+.first-section-title-desc {
+  width: 486px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.first-section-list {
+  display: flex;
+  list-style: none;
+  gap: 19px;
+}
+
+.first-section-list li {
+  width: 270px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 28px 36px 28px 28px;
+  border-radius: 15px;
+}
+
+.milk-card,
+.semi-sweet-card {
+  background-color: white;
+  border: 1px solid #fd9222;
+  overflow: hidden;
+  position: relative;
+}
+
+.choco-card {
+  background-color: orange;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay h4 {
+  color: #111;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.overlay button {
+  border-radius: 35px;
+  border: 1px solid #fd9222;
+  background: #fafafa;
+  padding: 6px 16px;
+  cursor: pointer;
+
+  color: #111;
+  font-size: 10px;
+  line-height: 12px; /* 120% */
+}
+
+.overlay > .btn-overlay-colored {
+  background: #fd9222;
+  color: #fff;
+}
+
+.overlay > p {
+  color: #111;
+  margin-top: 14px;
+
+  font-size: 14px;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.nuts-card {
+  background: #1e1823;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-desc {
+  margin-top: 36px;
+}
+
+.nuts-card-title {
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.choco-card:hover .overlay,
+.nuts-card:hover .overlay,
+.milk-card:hover .overlay,
+.semi-sweet-card:hover .overlay {
+  transform: translatey(0);
+  /* border: 1px solid #fd9222;
+    border-radius: 15px; */
+}
+
+.milk-card:hover,
+.semi-sweet-card:hover {
+  border: none;
+  border-radius: 15px;
+}
+
+/* ============================== second section ======================== */
+
+.second-section {
+  padding-top: 0;
+}
+
+.second-section-title {
+  margin-bottom: 50px;
+}
+
+.second-section-content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.second-section-list-container {
+  width: 516px;
+  height: 400px;
+  padding: 32px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.second-section-content-container h3 {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  width: 350px;
+  margin-bottom: 28px;
+}
+
+.second-section-content-container ul {
+  margin-left: 10px;
+}
+
+.second-section-content-container li {
+  color: #111;
+  font-size: 14px;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.second-section-content-container li:last-child {
+  margin-bottom: 0;
+}
