@@ -46,24 +46,7 @@ img {
 
 body {
   font-family: 'Montserrat';
-  color: var(--black);
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--white);
-}
-
-.container {
-  max-width: 375px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
