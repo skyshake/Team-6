@@ -61,12 +61,16 @@ body {
 
 .herosub {
   background-image: url(../images/subcribe-m.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
+<<<<<<< Updated upstream
   height: 370px;
   padding: 62px 23px;
+=======
+  padding: 72px;
+>>>>>>> Stashed changes
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
