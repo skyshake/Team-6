@@ -53,29 +53,116 @@ body {
   font-size: 14px;
   color: var(--whitecolor);
 }
+.subscribe-container {
+  margin: 0 auto;
 
+}
+
+.herosub {
+  background-image: url(../images/subscribe-m.jpg);
+  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding: 63px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/subscribe-m2x.jpg);
+  }
+}
+
+.subhero-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.sub {
+  background-color: var(--orange);
+  color: var(--whitecolor);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 44px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.sub {
+  background-color: var(--orange);
+  color: var(--whitecolor);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 44px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.sub:hover,
+.sub:focus {
+  color: var(--orange);
+  background-color: var(--hovercolor);
+}
+
+
+@media screen and (min-width: 768px) {
+.subscribe-container {
+    margin-top: 0 auto;
+  }
+
+.herosub {
+  background-image: url(../images/subscribe-t.jpg);
+  background-size: contain;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding: 72px;
+  margin: 0 auto;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/subscribe-t2x.jpg);
+  }
+}
+}
+
+
+
+@media screen and (min-width: 1158px) {
+  
 .container {
   padding: 0 20px;
   margin: auto;
 }
 
 .herosub {
-  background-image: url(../images/subcribe-m.jpg);
+  background-image: url(../images/Subscribe-d.jpg);
   background-size: contain;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
-<<<<<<< Updated upstream
-  height: 370px;
-  padding: 62px 23px;
-=======
   padding: 72px;
->>>>>>> Stashed changes
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/subcribe-m2x.jpg);
+    background-image: url(../images/subscribe-d2x.jpg);
   }
 }
 
@@ -122,4 +209,5 @@ body {
 .sub:focus {
   color: var(--orange);
   background-color: var(--hovercolor);
+}
 }
