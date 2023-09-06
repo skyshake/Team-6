@@ -3,54 +3,12 @@
   --orange: #fd9222;
   --whitecolor: #fff;
   --hovercolor: #fcf1e0;
-  --black: rgba(0, 0, 0, 0.1);
+  --modalbackground: rgba(0, 0, 0, 0.1);
   --lightgray: rgba(64, 64, 64, 0.3);
   --modalbg: #fafafa;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-.list {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-/*CSS Reset*/
-
 body {
-  letter-spacing: -0.28px;
-  font-size: 14px;
   color: var(--whitecolor);
 }
 .subscribe-container {
@@ -103,16 +61,7 @@ body {
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
-.sub {
-  background-color: var(--orange);
-  color: var(--whitecolor);
-  font-size: 18px;
-  font-weight: 600;
-  padding: 14px 44px;
-  border: 1px solid transparent;
-  border-radius: 100px;
-  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
-}
+
 
 .sub:hover,
 .sub:focus {
@@ -140,7 +89,7 @@ body {
     background-image: url(../images/subscribe-t2x.jpg);
   }
 }
-}
+
 
 
 
@@ -159,12 +108,32 @@ body {
   text-align: center;
   padding: 72px;
 
+.subscribe-container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.herosub {
+  background-image: url(../images/Subcribe-d.jpg);
+  background-size: auto;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    (min-resolut
     background-image: linear-gradient(to bottom rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%),
         url(../images/Subcribe-d2x.jpg);
+
+
   }
 }
 
@@ -172,16 +141,16 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
-  letter-spacing: -0.72px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
-.description {
+.sub-description {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: -0.28px;
+  letter-spacing: 0.05em;
   margin-bottom: 24px;
 }
 
@@ -211,5 +180,4 @@ body {
 .sub:focus {
   color: var(--orange);
   background-color: var(--hovercolor);
-}
 }
