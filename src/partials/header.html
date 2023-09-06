@@ -27,24 +27,55 @@
       </li>
     </ul>
 
-    <button
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="menu-icon" width="32" height="32">
-        <use href="./images/header.svg#hamburger-open-icon"></use>
-      </svg>
-    </button>
+    <svg class="menu-icon menu-toggle js-open-menu" width="32" height="32">
+      <use href="./images/header.svg#hamburger-open-icon"></use>
+    </svg>
 
     <!-- Hamburger Menu Close Icon and Navigations-->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <!-- Hamburger Menu Close Icon-->
-      <button class="menu-toggle js-close-menu">
-        <svg width="8" height="8">
-          <use href="./images/header.svg#hamburger-close-icon"></use>
-        </svg>
-      </button>
+      <svg width="14" height="14" class="menu-toggle js-close-menu">
+        <use href="./images/header.svg#hamburger-close-icon"></use>
+      </svg>
+
+      <ul class="mobile-nav-menu">
+        <li class="item">
+          <a class="link" href="#hero-section">Home</a>
+        </li>
+        <li class="item">
+          <a class="hamburger-link" href="#">How it's made?</a>
+        </li>
+        <li class="item">
+          <a class="hamburger-link" href="#">Our Products</a>
+        </li>
+        <li class="item"><a class="hamburger-link" href="#">Top sellers</a></li>
+        <li class="item">
+          <a class="hamburger-link" href="#">Chocolate is loved</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="item">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><svg width="24" height="24" class="mobile-social-svg">
+              <use href="./images/footer.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><svg width="24" height="24" class="mobile-social-svg">
+              <use href="./images/footer.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
