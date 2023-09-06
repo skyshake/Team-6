@@ -13,7 +13,6 @@ body {
 }
 .subscribe-container {
   margin: 0 auto;
-
 }
 
 .herosub {
@@ -25,8 +24,8 @@ body {
   padding: 63px;
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/subscribe-m2x.jpg);
   }
 }
@@ -61,43 +60,38 @@ body {
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
-
-
 .sub:hover,
 .sub:focus {
   color: var(--orange);
   background-color: var(--hovercolor);
 }
 
-
 @media screen and (min-width: 768px) {
-.subscribe-container {
+  .subscribe-container {
     margin-top: 0 auto;
   }
+}
 
 .herosub {
   background-image: url(../images/subscribe-t.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
   padding: 72px;
   margin: 0 auto;
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/subscribe-t2x.jpg);
   }
 }
 
-
-
-
 @media screen and (min-width: 1158px) {
-  
-.container {
-  padding: 0 20px;
-  margin: auto;
+  .container {
+    padding: 0 20px;
+    margin: auto;
+  }
 }
 
 .herosub {
@@ -107,6 +101,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   text-align: center;
   padding: 72px;
+}
 
 .subscribe-container {
   width: 1200px;
@@ -117,24 +112,13 @@ body {
 }
 
 .herosub {
-  background-image: url(../images/Subcribe-d.jpg);
+  background-image: url(../images/Subscribe-d.jpg);
   background-size: auto;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
   padding-top: 72px;
   padding-bottom: 72px;
-
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolut
-    background-image: linear-gradient(to bottom rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%),
-        url(../images/Subcribe-d2x.jpg);
-
-
-  }
 }
 
 .subhero-title {

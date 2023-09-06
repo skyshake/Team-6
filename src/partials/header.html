@@ -26,5 +26,25 @@
         </svg>
       </li>
     </ul>
+
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-icon" width="32" height="32">
+        <use href="./images/header.svg#hamburger-open-icon"></use>
+      </svg>
+    </button>
+
+    <!-- Hamburger Menu Close Icon and Navigations-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!-- Hamburger Menu Close Icon-->
+      <button class="menu-toggle js-close-menu">
+        <svg width="8" height="8">
+          <use href="./images/header.svg#hamburger-close-icon"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
