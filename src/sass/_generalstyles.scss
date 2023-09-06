@@ -5,6 +5,7 @@
   --benefit-description: rgba(255, 255, 255, 0.7);
   --orange: #fd9222;
   --reviews-text: rgba(17, 17, 17, 0.7);
+  --off-white: #fafafa;
 }
 
 /* CSS RESET */
@@ -48,7 +49,7 @@ body {
   font-family: 'Montserrat';
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: var(--white);
+  background-color: var(--off-white);
 }
 
 .header-container {
