@@ -140,7 +140,7 @@ section .card .image img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px auto 0;
+  margin: 50px auto 128px;
   color: var(--white);
   background-color: transparent;
   padding: 12px 20px;
@@ -167,6 +167,8 @@ section .card .image img {
   background-color: #fd9222;
 }
 
-.slider {
-  margin-bottom: 128px;
-}
+
+// .swiper {
+//   margin-bottom: 128px;
+// }
+
