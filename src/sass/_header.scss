@@ -149,6 +149,40 @@
   margin-bottom: 0;
 }
 
+.hamburger-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: -0.28px;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-link:hover,
+.hamburger-link:focus {
+  color: #fd9222;
+}
+
+.hamburger-link::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -8px;
+  width: 50%;
+  opacity: 0;
+  border: 1px solid #fd9222;
+  border-radius: 2px;
+  background-color: #fd9222;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-link:hover::after,
+.hamburger-link:focus::after {
+  opacity: 1;
+}
+
 .mobile-social {
   position: absolute;
   bottom: 0;
@@ -162,6 +196,11 @@
   stroke: white;
 }
 
+.mobile-social-svg:hover,
+.mobile-social-svg:focus {
+  stroke: #fd9222;
+}
+
 .link {
   color: inherit;
 }
@@ -172,4 +211,32 @@
   font-weight: 500;
   line-height: 16px; /* 114.286% */
   letter-spacing: -0.28px;
+}
+
+.nav-menu > li > a {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu > li > a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -8px;
+  width: 50%;
+  opacity: 0;
+  border: 1px solid #fd9222;
+  border-radius: 2px;
+  background-color: #fd9222;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu > li > a:hover::after,
+.nav-menu > li > a:focus::after {
+  opacity: 1;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > a:focus {
+  color: #fd9222;
 }
