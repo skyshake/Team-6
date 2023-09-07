@@ -18,25 +18,26 @@ h6 {
 
 /* ADVANTAGES section */
 .advantages {
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
   padding: 20px;
   background: var(--primarycolor);
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 50px 32px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  //   padding: 50px 32px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 50px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  //   padding: 50px;
+  // }
 }
 
 .advantages-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hide {
@@ -47,15 +48,18 @@ h6 {
   list-style: none;
   display: flex;
   flex-direction: column;
+  margin-left: 0;
   gap: 20px;
 
   @media screen and (min-width: 768px) {
+    margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-left: -36px;
     justify-content: space-between;
     gap: 10px;
     padding: 0;
