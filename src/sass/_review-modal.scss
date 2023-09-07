@@ -8,29 +8,31 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
+  overflow-y: scroll;
 }
 
 .review-modal {
   position: absolute;
-  top: 50%;
+  top: 300px;
   left: 50%;
   background-color: #fafafa;
   border-radius: 15px;
   background: #fafafa;
-  padding: 32px;
+  padding: 32px 24px;
   width: 100%;
   height: 471px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 375px) {
     min-width: 311px;
-    min-height: 100%;
+    min-height: 471px;
     width: 0;
   }
 
   @media screen and (min-width: 768px) {
+    top: 350px;
     padding: 40px;
     min-width: 517px;
     min-height: 628px;
@@ -50,8 +52,8 @@
 
 .review-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -64,6 +66,11 @@
   stroke-width: 2px;
   cursor: pointer;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
 }
 
 .review-icon:hover,
@@ -73,13 +80,20 @@
 
 .review-title {
   text-align: left;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
   color: #111111;
   margin-bottom: 32px;
-  width: 298px;
+  width: 255px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    width: 298px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
 }
 
 .choco {
@@ -96,27 +110,34 @@
 .review-input,
 .review-textarea {
   //   display: block;
-  padding: 22px 24px;
+  padding: 14px 18px;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.28px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
   outline: none;
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+    padding: 22px 24px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    margin-bottom: 18px;
+  }
 }
 
 .review-phone {
-  padding: 22px 24px 22px 160px;
+  padding: 10px 18px 10px 115px;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.28px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -124,24 +145,44 @@
   width: 100%;
   height: auto;
   margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 18px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    margin-bottom: 18px;
+  }
 }
 
 .code-2 {
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.36px;
   border-right: 1px solid rgba(64, 64, 64, 0.3);
-  padding-right: 20px;
+  padding-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding-right: 20px;
+  }
 }
 
 .phone-wrapper-2 {
   display: flex;
   position: absolute;
-  left: 27px;
-  top: 23px;
-  gap: 18px;
+  left: 30px;
+  top: 10px;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 27px;
+    top: 23px;
+    gap: 18px;
+  }
 }
 
 .review-textarea {
@@ -152,4 +193,29 @@
 .review-phone::placeholder,
 .review-textarea::placeholder {
   color: rgba(64, 64, 64, 0.3);
+}
+
+.review-button {
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 12px 28px;
+  border-radius: 100px;
+  margin-right: 14px;
+  border-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding: 14px 40px;
+  }
+}
+
+.review-button:hover,
+.review-button:focus {
+  color: var(--orange);
+  background-color: #fcf1e0;
 }
