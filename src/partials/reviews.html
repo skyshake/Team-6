@@ -1,10 +1,10 @@
 <section class="chocoisloved-section">
-    <div class="swiper reviewSwiper container">
+    <div class="slider reviewSlider container">
         <h2 class="products-title">
             CHOCOLATE <span>IS LOVED</span>
         </h2>
-        <div class="swiper-wrapper content">
-            <div class="swiper-slide card">
+        <div class="slider-wrapper content">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="slider-slide card">
                 <div class="card-content">
                     <div class="box1">
                         <div class="image">
@@ -129,14 +129,40 @@
             </div>
 
         </div>
-        <div class="swiper-pagination "></div>
+        <div class="swiper-pagination"></div>
 
-        <!-- <div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div> -->
+        <!-- <div class="slider-button-next"></div>
+        <div class="slider-button-prev"></div> -->
     </div>
 
 </section>
 
-<script src="./js/swiper-bundle.min.js"></script>
-<script src="./js/script.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- <script src="./js/script.js"></script> -->
+<script>
+    var swiper = new Swiper('.reviewSlider', {
+        slidesPerView: 1,
+        // spaceBetween:18,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        //   navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 18,
+            },
+        },
+    });
+
+
+</script>   
