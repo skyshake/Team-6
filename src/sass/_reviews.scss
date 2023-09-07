@@ -52,6 +52,7 @@
     height: 275px;
     width: 335px;
     margin-bottom: 50px;
+    gap: 28px;
 
     @media screen and (min-width: 728px) {
         height: 242px;
@@ -105,7 +106,7 @@ section .card .image img {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+   
 }
 
 .card .name-profession {
@@ -133,7 +134,7 @@ section .card .image img {
     color: #222;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination-bullet.slider-pagination-bullet-active {
     background-color: #fd9222;
     border-radius: 100px;
     width: 28px;
@@ -144,3 +145,4 @@ section .card .image img {
     width: 13px;
     height: 13px;
 }
+
