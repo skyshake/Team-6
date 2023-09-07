@@ -1,49 +1,77 @@
+/* varaiables */
+:root {
+  --primarycolor: #1e1823;
+  --orange: #fd9222;
+  --whitecolor: #fff;
+}
+
+/* CSS Reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* ADVANTAGES section */
 .advantages {
-  background: #1e1823;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--primarycolor);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 50px 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 50px;
+  }
 }
 
 .advantages-container {
-  width: 1200px;
   display: flex;
-  height: 344px;
-  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+}
 
-  margin: 0 auto;
-  padding: 0 32px;
+.hide {
+  display: none;
 }
 
 .advantages-list {
-  display: flex;
-  /* Make a flex container multiline */
-
-  /* Set gap between rows and columns */
-  gap: 10px;
-  padding: 0;
   list-style: none;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+  }
 }
 
 .advantages-item {
-  /*  Set the width of the elements  */
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 36px;
-  margin-right: 36px;
-  background-color: #1e1823;
+  margin-left: -36px;
   border-radius: 4px;
   width: 308px;
-  height: 244px;
-}
+  padding-right: 28px;
 
-.advantages-item:not(:first-child):before {
-  position: absolute;
-  top: 65px;
-  margin-left: -60px;
-  content: '';
-  width: 1px;
-  height: 124px;
-  background-color: rgba(255, 255, 255, 0.5);
+  @media screen and (min-width: 1200px) {
+    margin-left: 36px;
+    padding-right: 0;
+  }
 }
 
 .advantages-svg-box {
@@ -81,4 +109,15 @@
   width: 32px;
   height: 32px;
   flex-shrink: 0;
+}
+
+.vl {
+  visibility: hidden;
+
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 124px;
+    margin-top: 65px;
+  }
 }
