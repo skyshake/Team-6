@@ -1,146 +1,172 @@
 .chocoisloved-section {
-
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*height:463px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height:463px;
         padding: 0 32px; */
-    /* background-color: aqua; */
+  /* background-color: aqua; */
 }
 
 .container {
+  padding: 0 32px;
+  max-width: 335px;
+  margin: 0 auto;
+  /* background-color: yellow; */
 
-    padding: 0 32px;
-    max-width: 335px;
-    margin: 0 auto;
-    /* background-color: yellow; */
+  @media screen and (min-width: 728px) {
+    max-width: 704px;
+  }
 
-    @media screen and (min-width: 728px) {
-        max-width: 704px;
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .products-title {
-    text-align: center;
-    color: #fd9222;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -3%;
-    text-transform: uppercase;
-    padding-bottom: 50px;
+  text-align: center;
+  color: #fd9222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  padding-bottom: 50px;
 }
 
 .products-title span {
-
-    color: #111;
+  color: #111;
 }
 
 .card {
-    position: relative;
+  position: relative;
 
-    box-sizing: border-box;
-    border-radius: 20px;
-    height: 275px;
-    width: 335px;
-    margin-bottom: 50px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 275px;
+  width: 335px;
+  margin-bottom: 50px;
 
-    @media screen and (min-width: 728px) {
-        height: 242px;
-        width: 344px;
-    }
+  @media screen and (min-width: 728px) {
+    height: 242px;
+    width: 344px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        height: 242px;
-        width: 360px;
-    }
+  @media screen and (min-width: 1200px) {
+    height: 242px;
+    width: 360px;
+  }
 }
 
 .card .card-content {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 section .card .image img {
-
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 130px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .box1 {
-    box-sizing: border-box;
-    position: relative;
-    height: 242px;
-    width: 344px;
-    border-radius: 20px;
-
+  box-sizing: border-box;
+  position: relative;
+  height: 242px;
+  width: 344px;
+  border-radius: 20px;
 }
 
 .box2 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 344px;
-    height: 200px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 344px;
+  height: 200px;
 
-    bottom: 0;
-    border-radius: 20px;
-    background: #fff;
-    z-index: -1;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+  bottom: 0;
+  border-radius: 20px;
+  background: #fff;
+  z-index: -1;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .card .name-profession {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .name-profession .name {
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #222;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
 }
 
 .name-profession .comment {
-    box-sizing: border-box;
-    padding-top: 10px;
+  box-sizing: border-box;
+  padding-top: 10px;
 
-    font-size: 15px;
-    text-align: center;
-    color: #222;
+  font-size: 15px;
+  text-align: center;
+  color: #222;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #fd9222;
-    border-radius: 100px;
-    width: 28px;
-    height: 13px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  width: 28px;
+  height: 13px;
 }
 
 .swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
+  width: 13px;
+  height: 13px;
+}
+
+.review-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  color: var(--white);
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+  }
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  color: #fff;
+  border: 1px solid var(--orange);
+  background-color: #fd9222;
+}
+
+.swiper {
+  margin-bottom: 128px;
 }

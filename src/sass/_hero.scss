@@ -237,6 +237,11 @@
   }
 }
 
+.made-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .made-button:hover,
 .made-button:focus {
   color: var(--orange);
