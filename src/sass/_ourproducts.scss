@@ -18,14 +18,14 @@ body {
 }
 
 .products-container {
-  min-width: 375px;
+  max-width: 375px;
   padding-left: 32px;
   padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    min-width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -95,8 +95,10 @@ body {
 
 .products-button {
   display: inline-flex;
-  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
   width: 94px;
+  height: 33px;
   font-weight: 600;
   line-height: normal;
   font-style: normal;
