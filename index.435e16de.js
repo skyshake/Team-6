@@ -1,0 +1,2 @@
+var swiper=new Swiper(".product-slider",{slidesPerView:1,spaceBetween:8,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{768:{slidesPerView:3,spaceBetween:18},1200:{slidesPerView:4,spaceBetween:18}}});swiper=new Swiper(".reviewSwiper",{slidesPerView:1,spaceBetween:8,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{768:{slidesPerView:2,spaceBetween:16},1200:{slidesPerView:3,spaceBetween:28}}});
+//# sourceMappingURL=index.435e16de.js.map
