@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .reviews-container {
@@ -12,7 +11,7 @@
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    max-width: 900px;
+    max-width: 768px;
     padding: 0 32px;
   }
 
@@ -20,6 +19,10 @@
     max-width: 1200px;
     padding: 0 32px;
   }
+}
+
+.swiper .swiper-wrapper {
+  gap: 0px;
 }
 
 .products-title {
@@ -44,41 +47,34 @@
   border-radius: 20px;
   height: 242px;
   width: 335px;
-  
 
   @media screen and (min-width: 768px) {
     height: 242px;
     width: 344px;
-   
   }
 
   @media screen and (min-width: 1200px) {
     height: 242px;
     width: 360px;
-   
   }
 }
 
 .card .card-content {
-
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 20px;
   height: 242px;
   width: 335px;
-  
-  
-    @media screen and (min-width: 768px) {
-      height: 242px;
-      width: 344px;
-  
-    }
-  
-    @media screen and (min-width: 1200px) {
-      height: 242px;
-      width: 360px;
-  
-    }
+
+  @media screen and (min-width: 768px) {
+    height: 242px;
+    width: 344px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 242px;
+    width: 360px;
+  }
 }
 
 section .card .image img {
@@ -90,15 +86,15 @@ section .card .image img {
   object-fit: cover;
   border-radius: 50%;
 
-    // @media screen and (min-width: 768px) {
-    //   top: 0;
-    //     left: 130px;
-    
-    //   }
-    //   @media screen and (min-width: 1200px) {
-    //     top: 0;
-    //       left: 130px; 
-    //   }
+  // @media screen and (min-width: 768px) {
+  //   top: 0;
+  //     left: 130px;
+
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     top: 0;
+  //       left: 130px;
+  //   }
 }
 
 .box1 {
@@ -107,22 +103,18 @@ section .card .image img {
   position: relative;
   border-radius: 20px;
 
-  height:242px;
-  width:335px;
-
+  height: 242px;
+  width: 335px;
 
   @media screen and (min-width: 768px) {
-  height:242px;
-  width:344px;
-
+    height: 242px;
+    width: 344px;
   }
 
   @media screen and (min-width: 1200px) {
-  height:242px;
-  width:360px;
+    height: 242px;
+    width: 360px;
   }
-
-
 }
 
 .box2 {
@@ -141,18 +133,14 @@ section .card .image img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
   @media screen and (min-width: 768px) {
-    
     height: 200px;
     width: 344px;
-  
-    }
-  
-    @media screen and (min-width: 1200px) {
-      height: 200px;
-      width: 360px;
-  
-    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    height: 200px;
+    width: 360px;
+  }
 }
 
 .card .name-profession {
@@ -183,7 +171,7 @@ section .card .image img {
   font-style: normal;
   line-height: 14px;
   letter-spacing: -2%;
-  }
+}
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fd9222;
@@ -228,8 +216,6 @@ section .card .image img {
   background-color: #fd9222;
 }
 
-
 // .swiper {
 //   margin-bottom: 128px;
 // }
-
