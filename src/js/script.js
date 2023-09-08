@@ -1,7 +1,6 @@
 var swiper = new Swiper('.product-slider', {
   slidesPerView: 1,
-  // spaceBetween:18,
-  freeMode: true,
+  spaceBetween: 8,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -12,7 +11,7 @@ var swiper = new Swiper('.product-slider', {
   // },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView:3,
       spaceBetween: 18,
     },
     1200: {
@@ -23,20 +22,18 @@ var swiper = new Swiper('.product-slider', {
 });
 
   var swiper = new Swiper(".reviewSwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 28,
+      slidesPerView: 1,
+     spaceBetween: 8,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-        breakpoints: {
-    420: {
-      slidesPerView: 1,
-      spaceBetween: 28,
-    },
+    breakpoints: {
+          
+
     768: {
       slidesPerView: 2,
-      spaceBetween: 28,
+      spaceBetween: 16,
     },
     1200: {
       slidesPerView: 3,
