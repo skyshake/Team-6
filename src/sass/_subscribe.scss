@@ -387,7 +387,6 @@ body {
 
   .subscribe-form-cont {
     display: inline-flex;
-    padding-left: 40px;
   }
 
   .subscribe-modal-email {
@@ -642,11 +641,6 @@ body {
     color: var(--orange);
   }
 
-  .subscribe-form-cont {
-    display: inline-flex;
-    padding-left: 40px;
-  }
-
   .subscribe-modal-email {
     display: flex;
     gap: 8px;
@@ -700,7 +694,7 @@ body {
   }
 
   .modal-close-icon {
-    color: var(--whitecolor);
+    fill: var(--whitecolor);
     background-color: transparent;
     border: transparent;
   }
