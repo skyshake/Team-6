@@ -61,13 +61,16 @@ body {
   padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 72px;
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    margin-bottom: 128px;
   }
 }
 
@@ -159,12 +162,12 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-bottom: 128px;
-  min-width: 375px;
+  // padding-bottom: 128px;
+  // min-width: 375px;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    min-width: 768px;
+    // min-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
