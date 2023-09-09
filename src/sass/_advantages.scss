@@ -35,9 +35,19 @@ h6 {
 }
 
 .advantages-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-width: 375px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .hide {
@@ -52,7 +62,6 @@ h6 {
   gap: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
