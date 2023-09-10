@@ -1,5 +1,13 @@
 .hero {
-  margin-bottom: 72px;
+  margin-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 72px;
+  }
 }
 
 .hero-container {
@@ -267,7 +275,14 @@
 }
 
 .scroll-icon {
+  width: 16px;
+  height: 16px;
   fill: var(--orange);
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .scroll-wrapper {
