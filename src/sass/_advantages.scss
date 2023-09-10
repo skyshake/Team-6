@@ -64,7 +64,8 @@ h6 {
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 25px;
+    margin-left: 5px;
   }
 
   @media screen and (min-width: 1200px) {
