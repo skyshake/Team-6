@@ -7,7 +7,7 @@
 }
 
 .reviews-container {
-  max-width: 335px;
+  min-width: 375px;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
@@ -22,7 +22,15 @@
 }
 
 .swiper .swiper-wrapper.reviews-content {
-  gap: 0px;
+  gap: 2px;
+
+  @media screen and (min-width: 768px) {
+    gap: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 1px;
+  }
 }
 
 .products-title {
