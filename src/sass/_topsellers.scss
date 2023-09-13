@@ -56,6 +56,10 @@ body {
 }
 
 .top-sellers-container {
+  padding: 0;
+}
+
+.top-sellers {
   min-width: 375px;
   padding-left: 32px;
   padding-right: 32px;
@@ -254,7 +258,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 12px 28px;
   border-color: transparent;
   margin: auto;
 
@@ -262,6 +266,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    padding: 14px 40px;
     margin: 0;
   }
 
