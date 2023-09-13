@@ -19,8 +19,8 @@ h6 {
 /* ADVANTAGES section */
 .advantages {
   // width: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  // margin: 0 auto;
+  padding: 0;
   background: var(--primarycolor);
 
   // @media screen and (min-width: 768px) {
@@ -36,17 +36,18 @@ h6 {
 
 .advantages-container {
   min-width: 375px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding: 50px 32px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding: 50px;
   }
 }
 
@@ -59,12 +60,12 @@ h6 {
   display: flex;
   flex-direction: column;
   margin-left: 0;
-  gap: 20px;
+  gap: 10px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 32px;
     margin-left: 5px;
   }
 
@@ -80,7 +81,12 @@ h6 {
   margin-left: -36px;
   border-radius: 4px;
   width: 308px;
+  height: 226px;
   padding-right: 28px;
+
+  @media screen and (min-width: 1200px) {
+    height: 244px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 36px;
@@ -107,6 +113,7 @@ h6 {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 18px;
+  width: 308px;
 }
 
 .advantages-description {
@@ -117,6 +124,7 @@ h6 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.28px;
+  width: 308px;
 }
 
 .advantages-icon {
