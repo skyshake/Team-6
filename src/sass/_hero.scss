@@ -275,11 +275,13 @@
 }
 
 .scroll-icon {
+  padding-top: 3px;
   width: 16px;
   height: 16px;
   fill: var(--orange);
 
   @media screen and (min-width: 768px) {
+    padding-top: 3px;
     width: 22px;
     height: 22px;
   }
