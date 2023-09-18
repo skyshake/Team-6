@@ -60,7 +60,7 @@ h6 {
   display: flex;
   flex-direction: column;
   margin-left: 0;
-  gap: 10px;
+  gap: 20px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -84,13 +84,33 @@ h6 {
   height: 226px;
   padding-right: 28px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     height: 244px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 36px;
     padding-right: 0;
+  }
+}
+
+.advantages-item:last-child {
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.advantages-item:nth-child(3) {
+  padding-left: 0;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
   }
 }
 
